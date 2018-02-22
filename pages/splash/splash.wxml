@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <swiper class="swiper">
+    <swiper-item wx:for="{{moves}}" wx:for-index="index" >
+      <image src="{{item}}">
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
