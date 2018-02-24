@@ -10,12 +10,12 @@ const fectApi = (type,params) => {
 
 const find  = (type, page = 1, count = 20, search = '') => {
     const params = {
-        start : (page - 1) * count,
-        count : count,
-        city : '北京',
+        "start" : (page - 1) * count,
+        "count" : count,
+        "city" : getApp().data.currentCity,
     };
     return fectApi(type , search ? Object.assign(params,{q:search}) : params)
-    .then(res => res.data);
+      .then(res => res.data);
 };
 
 //抓取单个数据

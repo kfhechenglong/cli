@@ -1,8 +1,30 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+page{
+  height: 100%;
 }
-.log-item {
-  margin: 10rpx;
+.container {
+  height: 100%;
+}
+.swiper {
+  height: 100%;
+}
+.swiper swiper-item {
+  flex: 1;
+}
+.swiper swiper-item image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+/*立即体验按钮  */
+.start {
+  width: 300rpx;
+  position: absolute;
+  left:50%;
+  bottom:200rpx;
+  margin-left: -150rpx;
+  /* background-color: rgba(53, 73, 94, 0.4);
+  color:#fff; */
+  border:3rpx solid #35495e;
+  font-size: 40rpx;
 }

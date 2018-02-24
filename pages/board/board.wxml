@@ -1,6 +1,14 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="container">
+    <view class="slide">
+        <swiper indicator-dots='true' autoplay='true' interval="5000" duration="1000">
+            <swiper-item wx:for="{{boards[0].movies}}" wx:key="id">
+                <image src="{{}}" mode="aspectFill"/>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="board" >
+        <block>
+        </block>
+    </view>
 </view>

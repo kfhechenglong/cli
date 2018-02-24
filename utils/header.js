@@ -14,5 +14,5 @@ module.exports = function (api,path,params){
                 success:resolve,
                 fail:reject,
             })
-        })
+    })
 }
