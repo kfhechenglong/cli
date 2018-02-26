@@ -1,8 +1,57 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.slide swiper{
+  height: 480rpx;
 }
-.log-item {
-  margin: 10rpx;
+.slide swiper image{
+    height: 100%;
+    width: 100%;
+}
+.board{
+  box-sizing:border-box;
+  background-color:#f6f6f6;
+}
+.board-item{
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    font-size: 20rpx;
+    margin:40rpx 0;
+    padding:20rpx;
+    background-color: #fff;
+}
+.board-item .title{
+    display: flex;
+    margin-top:10rpx;
+    width: 100%;
+}
+.board-item .title text{
+    flex: 1;
+}
+.board-item .title image{
+    width: 20rpx;
+    height: 20rpx;
+}
+.board-item .content{
+    height: 300rpx;
+}
+.board-item .content .inner{
+    display: flex;
+    flex-direction: row;
+    height: 300rpx;
+    width:900rpx;
+}
+.board-item .content .inner .move-item {
+    display: flex;
+    flex-direction: column;
+    width: 180rpx;
+    margin:10rpx;
+}
+.board-item .content .inner .move-item image{
+    width: 100%;
+    height: 250rpx;
+}
+.board-item .content .inner .move-item text {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

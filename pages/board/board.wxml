@@ -3,12 +3,32 @@
     <view class="slide">
         <swiper indicator-dots='true' autoplay='true' interval="5000" duration="1000">
             <swiper-item wx:for="{{boards[0].movies}}" wx:key="id">
-                <image src="{{}}" mode="aspectFill"/>
+                <image src="{{item.images.large}}" mode="aspectFill"/>
             </swiper-item>
         </swiper>
     </view>
     <view class="board" >
-        <block>
+        <block wx:for="{{boards}}" wx:key="key">
+            <view class='board-item'>
+                <navigator url="../list/list?type={{item.key}}&title={{item.title}}" hover-class='none'>
+                    <view class="title">
+                        <text>
+                            {{item.title}}
+                        </text>
+                        <image src="../../images/arrowright.png" mode="aspectFill"/>
+                    </view>
+                </navigator>
+                <scroll-view scroll-x="true" class="content">
+                    <view class="inner">
+                        <navigator url="../item/item?id={{item.id}}" wx:for="{{item.movies}}" wx:key="id">
+                            <view class="move-item">
+                                <image src="{{item.images.large}}" mode="aspectFill" />
+                                <text>{{item.title}}</text>
+                            </view>
+                        </navigator>
+                    </view>
+                </scroll-view>
+            </view>
         </block>
     </view>
 </view>
