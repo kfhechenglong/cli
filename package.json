@@ -1,0 +1,26 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "he",
+  "main": "cli.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfhechenglong/cli.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "hechenglong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kfhechenglong/cli/issues"
+  },
+  "homepage": "https://github.com/kfhechenglong/cli#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
