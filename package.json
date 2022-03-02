@@ -2,10 +2,12 @@
   "name": "my-cli",
   "version": "1.0.0",
   "description": "he",
-  "main": "cli.js",
-  "bin": "cli.js",
-  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "he": "./bin/cli.js"
+  },
   "scripts": {
+    "start": "babel-node bin/cli.js create my-app -f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,10 +25,12 @@
   "homepage": "https://github.com/kfhechenglong/cli#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
+    "babel-plugin-import": "^1.13.3",
     "babel-preset-env": "^1.7.0",
     "chalk": "^3.0.0",
     "commander": "^9.0.0",
     "ejs": "^3.1.6",
+    "fs-extra": "^10.0.1",
     "inquirer": "^8.2.0",
     "ora": "^6.1.0"
   }
