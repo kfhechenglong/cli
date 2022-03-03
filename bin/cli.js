@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 import { program } from 'commander'
 import packageInfo from './../package.json'
+const chalk = require('chalk')
+const figlet = require('figlet')
 program
 .command('create <my-app>')
 .description('create a new project')
@@ -30,6 +32,18 @@ program
     .option('-p, --port <port>', 'Port used for the UI Server')
     .action((option) => {
         console.log('ui', option)
+    })
+
+program
+    .on('--help', () => {
+        console.log('\r\n' + figlet.textSync('laohe', {
+            font: 'Ghost',
+            horizontalLayout: 'default',
+            verticalLayout: 'default',
+            width: 80,
+            whitespaceBreak: true
+        }))
+        console.log(`\r\nRun ${chalk.cyan(`he <command> --help`)} for detailed usage of give command\r\n`);
     })
 
 program
