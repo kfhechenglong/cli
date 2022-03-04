@@ -7,17 +7,17 @@ axios.interceptors.response.use(res => {
 })
 
 // 获取模板
-async function getTempleteList() {
-    return axios.get('api')
+async function getTemplateList() {
+    return axios.get('https://api.github.com/orgs/zhurong-cli/repos')
 };
 
 // 获取模板版本
 
 async function getTagsList(templateName) {
-    return axios.get(`api${templateName}/tags`)
+    return axios.get(`https://api.github.com/repos/zhurong-cli/${templateName}/tags`)
 }
 
 module.exports = {
-    getTempleteList,
+    getTemplateList,
     getTagsList
 }

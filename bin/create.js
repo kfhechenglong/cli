@@ -6,6 +6,7 @@ module.exports = async function (name, options) {
     console.log(">>> create.js", name, options)
 
     const cwd = process.cwd();
+    const targetPath = path.join(cwd, name);
     console.log(targetPath)
     // 判断目标是否存在
     if (fs.existsSync(targetPath)) {
