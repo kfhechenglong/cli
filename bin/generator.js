@@ -84,7 +84,7 @@ async function wrapLoading (fn, mes, ...args) {
         await this.download(repo, tag);
         // 下载成功后的提示
         console.log(`\r\nSuccessfully created project ${chalk.cyan(this.dirName)}`);
-        console.log(`\r\n cd ${chalk.cyan(this.name)}`)
+        console.log(`\r\n cd ${chalk.cyan(this.dirName)}`)
         console.log(` npm run dev\r\n`)
     }
  }

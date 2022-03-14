@@ -15,7 +15,9 @@
     "url": "git+https://github.com/kfhechenglong/cli.git"
   },
   "keywords": [
-    "cli"
+    "cli",
+    "vue-cli",
+    "脚手架"
   ],
   "author": "hechenglong",
   "license": "ISC",
