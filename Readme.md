@@ -1,11 +1,11 @@
 # 开发自己的脚手架工具
 ## 安装
 ```
-$ npm install -g my-cli
+$ npm install -g he-cli-vue
 
 # or yarn
 
-$ yarn global add my-cli
+$ yarn global add he-cli-vue
 ```
 
 ## 使用
